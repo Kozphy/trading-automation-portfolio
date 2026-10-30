@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tradebot"
+version = "0.1.0"
+description = "Educational trading-automation portfolio: ccxt connectors, risk manager, backtester, TradingView webhook, trade journal."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pandas>=2.0", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+exchange = ["ccxt>=4.0"]
+webhook = ["fastapi>=0.100", "uvicorn>=0.23", "pydantic>=2"]
+mt5 = ["MetaTrader5>=5.0; platform_system == 'Windows'"]
+dev = ["pytest>=7", "ruff>=0.4", "httpx>=0.25", "fastapi>=0.100", "pydantic>=2"]
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["python"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
