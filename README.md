@@ -4,6 +4,8 @@ A working, tested portfolio of trading-automation building blocks:
 - an **MT5/MQL5 Expert Advisor** with prop-firm risk controls
 - a **Python crypto bot toolkit** that covers ccxt connectors (Binance, Bybit, OKX), a risk manager, a vectorized backtester, a TradingView webhook, an optional MetaTrader 5 bridge and trade-journal analytics
 
+**Hire me:** I build custom MT5/MQL5 EAs, Python crypto bots, TradingView automation and backtests. [Contact me on Upwork](https://www.upwork.com/freelancers/~01f2d28a00fa4262d3).
+
 > ⚠️ **Disclaimer:** This repository is for educational and demonstration purposes only. It is **not financial advice**, and it makes no claim that any strategy is profitable. Trading carries substantial risk of loss. Every connector runs in **paper mode by default**. Run anything only on paper or demo/testnet accounts, at your own risk.
 
 ## Architecture
@@ -94,6 +96,10 @@ These are the actual output of `python scripts/run_backtest.py`: `EmaCrossStrate
 ## MQL5 EA
 
 See [`mql5/README.md`](mql5/README.md) for compile and Strategy Tester instructions. The EA has **not been compiled in CI**, because MetaEditor is Windows-only. Compile it and test it on a demo account before use.
+
+## Hire me / contact
+
+Need an EA, a crypto bot, a TradingView webhook or a backtest built or fixed? Send me a message on **Upwork:** https://www.upwork.com/freelancers/~01f2d28a00fa4262d3
 
 ## License
 MIT
